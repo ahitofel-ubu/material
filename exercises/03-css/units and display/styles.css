@@ -1,0 +1,56 @@
+/* Base font size of the document */
+html {
+  font-size: 16px;
+}
+
+/* rem → relative to the html element */
+.rem {
+  font-size: 2rem;
+  /* 2 × 16px = 32px */
+}
+
+/* em → relative to the parent element */
+.container {
+  font-size: 20px;
+}
+
+.em {
+  font-size: 2em;
+  /* 2 × 20px = 40px */
+}
+
+/* % → relative to the parent container */
+.boxes {
+  width: 80%;
+  background-color: lightgray;
+}
+
+.percentage {
+  width: 50%;
+  background-color: lightblue;
+}
+
+/* vw → relative to the viewport width */
+.vw {
+  width: 50vw;
+  background-color: lightcoral;
+}
+
+/* vh → relative to the viewport height */
+.vh {
+  height: 20vh;
+  background-color: lightgreen;
+}
+
+/* DISPLAY */
+
+.block {
+  display: block;
+  background-color: orange;
+  margin: 10px 0;
+}
+
+.inline {
+  display: inline;
+  background-color: yellow;
+}
