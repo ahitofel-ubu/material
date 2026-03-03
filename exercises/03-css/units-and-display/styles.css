@@ -6,6 +6,7 @@ html {
 /* rem → relative to the html element */
 .rem {
   font-size: 2rem;
+  color: white;
   /* 2 × 16px = 32px */
 }
 
@@ -53,4 +54,24 @@ html {
 .inline {
   display: inline;
   background-color: yellow;
+}
+
+/* Mobile phone */
+@media(max-width:400px) {
+  body {
+    background-color: #F09A9D;
+    /* Red */
+  }
+
+  .rem {
+    font-size: 1rem;
+  }
+}
+
+/* Tablet */
+@media(max-width:700px) and (min-width:400px) {
+  body {
+    background-color: blue;
+    /* Red */
+  }
 }
