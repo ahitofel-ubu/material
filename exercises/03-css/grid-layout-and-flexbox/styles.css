@@ -32,7 +32,7 @@ body {
   padding: 1rem;
 
   display: grid;
-  grid-template-columns: 1fr 4fr 1fr;
+  grid-template-columns: 1fr 2fr 1fr;
   grid-template-rows: 100px 100px 100px;
 }
 
@@ -51,7 +51,15 @@ body {
 #item-grid3 {
   background-color: coral;
   grid-row-start: 1;
-  grid-row-end: 3;
+  grid-row-end: 2;
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+
+#item-grid4 {
+  background-color: blue;
+  grid-row-start: 2;
+  grid-row-end: 4;
   grid-column-start: 1;
   grid-column-end: 3;
 }
@@ -61,11 +69,11 @@ body {
   border: 2px solid #3A6B3B;
   padding: 1rem;
 
-  height: 15rem;
+  height: 20rem;
 
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
 }
@@ -80,4 +88,8 @@ body {
   border-radius: 0.625rem;
   text-align: center;
   margin: 0.625rem;
+}
+
+#item-flex1 {
+  flex: 2;
 }
