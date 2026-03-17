@@ -7,12 +7,7 @@
   gap: 0.5rem;
 }
 
-header,
-nav,
-section,
-aside,
-article,
-footer {
+.iwaborder {
   border: dashed 0.5px;
 }
 
