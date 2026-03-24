@@ -1,0 +1,165 @@
+body {
+    font-family: "Ubuntu", sans-serif;
+    background-color:  rgb(239, 255, 250);
+    color: rgb(239, 255, 250);
+}
+
+.gridcontainer {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: 2fr 0.5fr 5fr 1fr;
+    grid-gap: 2pt;
+    gap: 0.5rem;
+}
+
+
+footer {
+    border: dashed 0.5pt gray;
+}
+
+.myheader {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(47, 76, 67);
+    padding: 0rem 1rem;
+    border-bottom: 3pt solid rgb(73, 115, 102);
+    border-left: 3pt solid rgb(73, 115, 102);
+}
+
+.mynav {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0rem 1rem;
+    margin: 0pt;
+    font-size: small;
+}
+
+.myheader a {
+    text-decoration: none;
+    color: rgb(239, 255, 250);
+    font-size: large;
+    font-weight: bold;
+    background-color: rgb(47, 76, 67);
+    padding: 0.4rem;
+    border-end-end-radius: 30%;
+    border-start-start-radius: 30%;
+    border-bottom: 4pt;
+    border-bottom: solid rgb(73, 115, 102);
+    border-left: solid rgb(73, 115, 102);
+
+    margin: 5pt;
+}
+
+.mynav a {
+    color: rgb(239, 255, 250);
+    background-color: rgb(47, 76, 67);
+    padding: 0.4rem;
+    border-end-end-radius: 30%;
+    border-start-start-radius: 30%;
+    border-bottom: 4pt;
+    border-bottom: solid rgb(73, 115, 102);
+    border-left: solid rgb(73, 115, 102);
+    text-decoration: none;
+    padding: 0.5rem;
+    font-weight: bold;
+}
+
+
+.myfooter {
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+
+.logo {
+    width: 30vw;
+    max-width: 200px;
+    border-radius: 90%;
+    margin: 0.2rem;
+    background-color: rgb(73, 115, 102);
+    border-top: 2pt solid rgb(27, 46, 40);
+    border-right: 2pt solid rgb(27, 46, 40);
+    margin-top: 0.5rem;
+}
+
+ul {
+    list-style-type: none;
+    display: inline-flex;
+}
+
+li+li {
+    margin-left: 1rem;
+}
+
+.maincontent {
+    display: flex;
+    flex-direction: column;
+}
+
+.description {
+    flex: initial;
+    background-color: rgb(73, 115, 102);
+    border-top: 2pt solid rgb(27, 46, 40);
+    border-right: 2pt solid rgb(27, 46, 40);
+}
+
+.tutors {
+    flex: 1;
+    background-color: rgb(73, 115, 102);
+    border-top: 2pt solid rgb(27, 46, 40);
+    border-right: 2pt solid rgb(27, 46, 40);
+}
+
+.filters {
+    background-color: rgb(73, 115, 102);
+    border-top: 2pt solid rgb(27, 46, 40);
+    border-right: 2pt solid rgb(27, 46, 40);
+}
+
+.ranking {
+    background-color: rgb(73, 115, 102);
+    border-top: 2pt solid rgb(27, 46, 40);
+    border-right: 2pt solid rgb(27, 46, 40);
+}
+
+@media(max-width:400px) {
+    .gridcontainer {
+        grid-template-rows: 2fr 0.5fr 3fr 0.5fr 0.5fr 0.5fr;
+    }
+
+    .myheader {
+        flex-direction: column;
+        padding: 0rem;
+        justify-content: center;
+        align-items: center;
+    }
+
+    ul {
+        padding-inline-start: 0px;
+        margin-bottom: 30pt;
+    }
+
+    .logo {
+        width: 100%;
+    }
+
+    .maincontent {
+        grid-row-start: 3;
+    }
+
+    .maincontent,
+    .filters,
+    .ranking {
+        grid-column-start: 1;
+        grid-column-end: 4;
+    }
+
+    .mynav {
+        flex-wrap: wrap;
+    }
+}
